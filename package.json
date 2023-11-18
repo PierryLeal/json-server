@@ -11,7 +11,7 @@
   "scripts": {
     "prepare": "husky install",
     "test": "npm run build && cross-env NODE_ENV=test jest",
-    "start": "babel-node -- src/cli/bin db.json -r routes.json",
+    "start": "babel-node -- src/cli/bin db.json -r routes.json -s assets/img",
     "lint": "eslint . --ignore-path .gitignore",
     "fix": "npm run lint -- --fix",
     "build": "babel src -d lib",

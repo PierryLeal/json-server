@@ -1,0 +1,471 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #9e9e9e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f5875;
+  border-radius: 4px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background: #131921;
+}
+
+.header-style {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+.header-style a {
+  text-decoration: none;
+}
+
+.navbar-style {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.navbar-style a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar-style a span {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgb(17, 117, 160) 100%
+  );
+  flex-direction: column;
+  min-height: 80vh;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.first-content-style {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem 0 0.5rem;
+  width: 100%;
+  height: auto;
+  max-width: 1080px;
+}
+
+.second-content-style {
+  display: flex;
+  padding: 1rem 0.5rem 0 0.5rem;
+  width: 100%;
+  gap: 1rem;
+  max-width: 1080px;
+}
+
+.carousel-style {
+  display: flex;
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.carousel-style span {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel-item-style img {
+  height: 100%;
+  width: auto;
+}
+
+.carousel-item-style span {
+  width: auto;
+}
+
+.list-itens-style {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  height: fit-content;
+}
+
+.list-itens-style a {
+  text-decoration: none;
+  height: auto;
+}
+
+.card-style {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 25rem;
+  box-shadow: 10px 10px 20px -4px #000000;
+}
+
+.card-style p {
+  color: #000000 !important;
+  margin: 0;
+  font-weight: 500;
+}
+
+.card-title-style {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-bottom: 1px solid #000000;
+}
+
+.card-description-style {
+  display: -webkit-box;
+  font-size: 0.8rem;
+  max-width: 200px;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.album-item-style {
+  height: 55%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #37475a;
+  width: 100%;
+}
+
+.back-top-style {
+  height: 2.5rem;
+  width: 100%;
+}
+
+.back-top-style:hover {
+  backdrop-filter: brightness(150%);
+}
+
+.back-top-style a {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content-style {
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 100%;
+  padding: 2rem;
+  gap: 2.5rem;
+  min-height: 20rem;
+  background-color: #232f3e;
+  color: #ffffff;
+}
+
+.company-line-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 100%;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.description-album-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1080px;
+  background: #ffffff77;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.description-album-container-style {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.description-album-information-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.description-album-image-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  width: 100%;
+}
+
+.separator-style {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  margin: 0.5rem 0;
+  background: #9c9c9c;
+}
+
+.map-style-content {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  max-width: 1060px;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+.title-separator {
+  display: flex;
+  border-bottom: 1px solid #000000;
+  padding: 0 0 0.5rem 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.map-style {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.modal-styled {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000007a;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-styled {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 50%;
+  max-width: 800px;
+  background-color: #000e1e;
+  border-radius: 8px;
+  padding: 2rem;
+  gap: 0.5rem;
+}
+
+.modal-content-styled .carousel-style {
+  height: 100%;
+  min-height: 100%;
+}
+
+.close-modal-styled {
+  display: flex;
+  color: #ffffff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-modal-styled:hover {
+  color: #ffffff;
+  background-color: rgb(169, 225, 241);
+  cursor: pointer;
+}
+
+.listing-album-styled {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.listing-album-item-styled div {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: min-content;
+  height: 21rem;
+  padding: 1rem;
+  box-shadow: 10px 10px 15px -8px #2a3c5e;
+  border-radius: 6px;
+}
+
+.listing-album-item-styled div:hover {
+  box-shadow: 10px 10px 15px 0px #2a3c5e;
+  cursor: pointer;
+}
+
+.listing-album-item-styled span {
+  display: -webkit-box;
+  font-size: 0.8rem;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.footer-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 100%;
+  gap: 1rem;
+  min-height: 20rem;
+  background-color: #232f3e;
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .list-itens-style {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 764px) {
+  .header-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    padding: 1rem 0.5rem 0 0.5rem;
+  }
+
+  .navbar-style {
+    display: flex;
+    padding: 0 0 1rem 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .list-itens-style {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .first-content-style {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel-style {
+    height: 12rem;
+  }
+
+  .second-content-style {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description-album-container-style {
+    flex-direction: column;
+  }
+
+  .description-album-image-style {
+    max-height: unset;
+    height: auto;
+  }
+
+  .footer-content-style {
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 0.5fr;
+    justify-content: center;
+  }
+
+  .navbar-style a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .card-style {
+    height: 12.5rem;
+  }
+
+  .album-item-style {
+    height: 45%;
+  }
+
+  .navbar-style a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .card-style {
+    height: 8rem;
+  }
+
+  .album-item-style {
+    height: 30%;
+  }
+
+  .navbar-style a {
+    font-size: 0.6rem;
+  }
+}
